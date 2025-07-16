@@ -1,4 +1,4 @@
-/* import { connectDB } from '@/lib/db';
+import { connectDB } from '@/lib/db';
 import Todo from '@/models/todo';
 import { NextResponse } from 'next/server';
 
@@ -20,7 +20,7 @@ export async function DELETE(_: Request, { params }: { params: { id: string } })
     await Todo.findByIdAndDelete(params.id);
     return NextResponse.json({ success: true });
 }
- */
+
 
 /* import { connectDB } from '@/lib/db';
 import Todo from '@/models/todo';
@@ -56,7 +56,7 @@ export async function DELETE(_: Request, context: Params) {
 }
  */
 
-import { connectDB } from '@/lib/db';
+/* import { connectDB } from '@/lib/db';
 import Todo from '@/models/todo';
 import { NextResponse } from 'next/server';
 
@@ -89,4 +89,4 @@ export async function DELETE(
     await connectDB();
     await Todo.findByIdAndDelete(context.params.id);
     return NextResponse.json({ success: true });
-}
+} */
